@@ -29,7 +29,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
-# nltk.download('stopwords')
+nltk.download('stopwords')
 stopwords = nltk.corpus.stopwords.words('english')
 listofstopwords = list(stopwords)
 listofstopwords.extend(('said','trump','reuters','president','state','government','states','new','house','united',
