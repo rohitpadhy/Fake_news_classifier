@@ -108,37 +108,37 @@ def main():
             # If user selects Logistic Regression
             if model_choice == 'Logistic Regression':
                 # Importing the model to predict
-                predictor = loading_prediction_models('Models1/LR_model.pkl')
+                predictor = loading_prediction_models('application/Models1/LR_model.pkl')
                 # Setting our prediction by calling .predict on the model selected
                 prediction = predictor.predict(vect_text)
 
             # If user chooses Decision Tree Classifier
             elif model_choice == "Bagging CLassifier":
-                predictor = loading_prediction_models('Models1/Bag_model.pkl')
+                predictor = loading_prediction_models('application/Models1/Bag_model.pkl')
                 prediction = predictor.predict(vect_text)
 
             elif model_choice == 'Decision Tree':
-                predictor = loading_prediction_models('Models1/DT_model.pkl')
+                predictor = loading_prediction_models('application/Models1/DT_model.pkl')
                 prediction = predictor.predict(vect_text)
 
             # If user chooses Random Forest Classifier
             elif model_choice == 'Random Forest':
-                predictor = loading_prediction_models('Models1/RF_model.pkl')
+                predictor = loading_prediction_models('application/Models1/RF_model.pkl')
                 prediction = predictor.predict(vect_text)
 
             elif model_choice == 'Naive Bayes':
-                predictor = loading_prediction_models('Models1/NB_model.pkl')
+                predictor = loading_prediction_models('application/Models1/NB_model.pkl')
                 prediction = predictor.predict(vect_text)
 
             elif model_choice == 'Neural Network':
-                predictor = loading_prediction_models('Models1/NN_model.pkl')
+                predictor = loading_prediction_models('application/Models1/NN_model.pkl')
                 prediction = predictor.predict(vect_text)
 
             elif model_choice == 'Support Vector Machines':
-                predictor = loading_prediction_models('Models1/SVC_model.pkl')
+                predictor = loading_prediction_models('application/Models1/SVC_model.pkl')
                 prediction = predictor.predict(vect_text)
             elif model_choice == "AdaBoost":
-                predictor = loading_prediction_models('Models1/ADB_model.pkl')
+                predictor = loading_prediction_models('application/Models1/ADB_model.pkl')
                 prediction = predictor.predict(vect_text)
 
             final_result = get_keys(prediction[0], prediction_labels)
