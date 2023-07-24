@@ -1,13 +1,13 @@
 ----WELCOME TO MY PROJECT-----
-----Created by Aly Boolani----
+----Created by Rohit----
 ----This project is on detecting fake news using natural language Processing technique,
 
 --------- FOLDER STRUCTURE -----------
 1. README.txt - Text file with instructions
-3. Application - accessed by 'streamlit run newapp.py' in bash
+3. Application - accessed by 'streamlit run TruthShield.py' in bash
 4. Models - Models created during the process
 5. News - Dataset used
-6. Final Notebook 1 for everything and 2 for GridSearch and final verdict.
+6. Final Notebook 1 for everything.
 7. Final Business Report
 
 Please see the individual descriptions below:
@@ -19,15 +19,11 @@ This folder comprises of the dataset from Kaggle. It has two csv files identifyi
   Fake.csv
   combined_articles.csv - feature engineering notebook created by me
 
-Source: https://drive.google.com/drive/folders/1B6J1s8rwGDk3pmhIl9MQIUc547K5a-JE?usp=sharing
-
-Original source: https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset
 
 
------------- Notebooks --------------
-There are two notebooks in this folder
-Notebook 1 - This notebook comprises of everything from reading in the data to cleaning and preprocessing to vectorization and to finally modelling.
-Notebook 2 - This notebook comprises of the GridSearch that identifies the best model and has some closing remarks.
+------------ Notebook --------------
+There are one notebooks in this folder
+Notebook  - This notebook comprises of everything from reading in the data to cleaning and preprocessing to vectorization and to finally modelling.
 
 
 ------------Models folder--------------
@@ -44,7 +40,7 @@ ADB_model.pkl - AdaBoostClassifier model
 DT_model.pkl - Decision Tree Classifier model
 KNN_model.pkl - K Nearest Neighbors
 LR_model.pkl - Logistic Regression
-LRSS_model.pkl - Logistic Regression with Scaler
+BAG_model.pkl - Bagging CLassifier
 NB_model.pkl - Naive Bayes MultinomialNB
 NN_model.pkl - Neural Network MLP
 RF_model.pkl - Random Forest Classifier
