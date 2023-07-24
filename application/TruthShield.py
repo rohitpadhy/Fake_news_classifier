@@ -62,7 +62,7 @@ def word_drop(text):
     return text
 
 # Vectorizing loading function
-news_vectorizer = open('Models1/TfidfVectorizer.pkl', 'rb')
+news_vectorizer = open('application/Models1/TfidfVectorizer.pkl', 'rb')
 news_cv = joblib.load(news_vectorizer)
 
 # Loading our models function
